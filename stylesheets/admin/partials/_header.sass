@@ -64,17 +64,17 @@ ul#navigation
 
 #toolbar
   background: white
-  +linear-gradient(color-stops(white, darken(white, 5%), darken(white, 20%)))
-  font-size: 95%
+  +linear-gradient(color-stops(white, darken(white, 20%)))
   clear: both
+  font-size: 90%
+  line-height: 22px
   margin: 0
   width: 100%
-  height: 38px
   +pie-clearfix
   .right
     float: right
   form.search
-    padding: 8px 8px 0
+    margin: 10px 8px 10px
     input[type=search]
       font-size: 12px
       +border-radius(100px)
@@ -88,31 +88,38 @@ ul#navigation
       padding: 2px 8px 2px 20px
 
 ul#secondary_navigation
-  float: left
+  +background-clip(padding-box)
+  +linear-gradient(color-stops(#d5d5d5, #a5a5a5))
+  +border-radius(8px)
+  +box-shadow(rgba(white, 0.35), 0, 1px, 0)
   margin-right: 8px
+  margin: 8px 10px
+  padding: 1px 0 1px 1px
+  float: left
+  +clearfix
   li
-    float: left
     display: block
-    background: image-url('admin/navigation_secondary_separator.gif') bottom right no-repeat
-    padding-right: 2px
+    float: left
+    margin-right: 1px
     a
-      color: #555
+      background: white
+      +linear-gradient(color-stops(white, darken(white, 5%), darken(white, 20%)))
+      color: #333
       display: block
       font-weight: normal
-      float: left
-      line-height: 38px
       margin: 0
-      padding: 0 26px
-      height: 38px
+      padding: 1px 12px
       text-decoration: none
       &:hover
-        +linear-gradient(color-stops(#e4f9ff, #d2ebfd 30%, #b1d1f1 50%, #9bc5ed 50%, #caecff))
-        color: #444
+        background: white
+        +linear-gradient(color-stops(white, darken(white, 30%)))
       &.current
-        background: #ddd
-        +linear-gradient(color-stops(white, darken(white, 10%) 35%, darken(white, 15%) 50%, darken(white, 20%) 50%, darken(white, 15%)))
-        color: #333
-        font-weight: bold
-        &:hover
-          +linear-gradient(color-stops(#e0f9fe, #c4e2f8 30%, #98c3e7 50%, #79aedb 50%, #b1ddef))
-          color: #222
+        background: #6d6d6d
+        +linear-gradient(color-stops(#bbb, #888))
+        +box-shadow(rgba(black, 0.8), 0, 0, 2px)
+        color: white
+        +text-shadow(rgba(black, 0.4), 0, 1px, 0)
+    &:first-child a
+      +border-left-radius(8px)
+    &:last-child a
+      +border-right-radius(8px)
