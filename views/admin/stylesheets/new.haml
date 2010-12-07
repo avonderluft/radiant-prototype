@@ -2,6 +2,8 @@
 - @selected = :stylesheets
 - @new_record = true
 
+= render 'toolbar'
+
 %h1 New Stylesheet
 
 %form{:method=>"post", :action=>"/admin/stylesheets/", "data-onsubmit_status"=>"Creating stylesheet&#8230;"}

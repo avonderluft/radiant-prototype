@@ -1,0 +1,12 @@
+- @selected = :dashboard
+
+- content_for :toolbar do
+  .left
+    %ul.actions
+      %li= link_to "New " + image("dropdown.png"), "#new_item_dropdown", :class => "dropdown"
+
+
+%div{:style=>"display: none"}
+  %ul.menu#new_item_dropdown
+    %li= link_to "Article", "/admin/pages/new"
+    %li= link_to "Page", "/admin/pages/new"

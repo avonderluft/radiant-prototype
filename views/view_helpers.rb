@@ -31,7 +31,10 @@ module ViewHelpers
   
   def tabs
     content = NavTab.new(:content, "Content")
+    content << NavSubItem.new(:dashboard, "Dashboard", "/admin/dashboard/")
+    content << NavSubItem.new(:articles, "Articles", "/admin/articles/")
     content << NavSubItem.new(:pages, "Pages", "/admin/pages/")
+    content << NavSubItem.new(:comments, "Comments", "/admin/comments/")
     
     design = NavTab.new(:design, "Design")
     design << NavSubItem.new(:layouts, "Layouts", "/admin/layouts/")

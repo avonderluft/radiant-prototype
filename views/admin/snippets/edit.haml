@@ -2,6 +2,8 @@
 - @selected = :snippets
 - @title = 'header Snippet - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 %h1 Edit Snippet
 
 %form{:method=>"post", :action=>"/admin/snippets/", "data-onsubmit_status"=>"Saving changes&#8230;"}

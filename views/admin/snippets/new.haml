@@ -2,6 +2,8 @@
 - @selected = :snippets
 - @new_record = true
 
+= render 'toolbar'
+
 %h1 New Snippet
 
 %form{:method=>"post", :action=>"/admin/snippets/", "data-onsubmit_status"=>"Creating snippet&#8230;"}

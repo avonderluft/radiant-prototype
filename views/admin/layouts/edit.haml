@@ -2,6 +2,8 @@
 - @selected = :layouts
 - @title = 'Normal Layout - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 %h1 Edit Layout
 
 %form{:method=>"post", :action=>"/admin/layouts/", "data-onsubmit_status"=>"Saving changes&#8230;"}

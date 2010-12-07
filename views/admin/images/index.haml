@@ -1,6 +1,8 @@
 - @selected = :images
 - @title = 'Images - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 .outset
   %table#images.index
     %thead
@@ -137,5 +139,3 @@
     %a.next_page{:href => "/admin/images?page=2", :rel => "next"} Next &raquo;
   .depaginate
     %a{:href => "/admin/images?pp=91"} show all 36
-  %ul
-    %li= link_to image('upload.png') + " Upload Image", "/admin/images/new"

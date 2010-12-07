@@ -2,6 +2,8 @@
 - @selected = :javascripts
 - @new_record = true
 
+= render 'toolbar'
+
 %h1 New Stylesheet
 
 %form{:method=>"post", :action=>"/admin/javascripts/", "data-onsubmit_status"=>"Creating javascript&#8230;"}

@@ -2,6 +2,8 @@
 - @selected = :stylesheets
 - @title = 'print.css Stylesheet - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 %h1 Edit Stylesheet
 
 %form{:method=>"post", :action=>"/admin/stylesheets/", "data-onsubmit_status"=>"Saving changes&#8230;"}

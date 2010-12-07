@@ -1,6 +1,8 @@
 - @selected = :layouts
 - @title = 'Layouts - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 .outset
   %table#layouts.index
     %thead
@@ -26,7 +28,3 @@
           %a{:href=>"/admin/layouts/edit" } XML Feed
         %td.actions
           = link_to image('minus.png') + " Remove", "/admin/layouts/remove", :class => "action popup"
-
-#actions
-  %ul
-    %li= link_to image('plus.png') + " New Layout", "/admin/layouts/new"

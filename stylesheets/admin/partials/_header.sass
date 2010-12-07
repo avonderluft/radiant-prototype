@@ -73,6 +73,42 @@ ul#navigation
   +pie-clearfix
   .right
     float: right
+  
+  ul.actions  
+    +clearfix
+    float: left
+    margin: 8px 9px 8px 0
+    li
+      display: block
+      float: left
+      padding: 1px
+    img
+      vertical-align: -20%
+    a
+      color: #333
+      display: block
+      padding: 2px 8px
+      text-decoration: none
+      &:hover
+        background: #d8d8d8
+        +linear-gradient(color-stops(#fff, #ccc))
+        border: 1px solid #d4d4d4
+        border-bottom-color: #a6a6a6
+        border-left-color: #bbb
+        border-right-color: #bbb
+        +border-radius
+        padding: 1px 7px
+        +box-shadow(rgba(white, 0.35), 0, 1px, 0)
+      &.dropdown.selected
+        background: #c5e0f5
+        +linear-gradient(color_stops(#e5f5ff, desaturate(darken(#c5e0ff, 10), 50)))
+        border: 1px solid #a5c9df
+        border-bottom: none
+        +border-top-radius
+        +border-bottom-radius(0)
+        +box-shadow(rgba(white, 0.8), 0, 1px, 0, inset)
+        padding: 1px 7px 2px
+  
   form.search
     margin: 10px 8px 10px
     input[type=search]

@@ -2,6 +2,8 @@
 - @selected = :pages
 - @title = 'Home Page - Radiant CMS - Publishing for Small Teams'
 
+= render 'toolbar'
+
 %h1 Edit Page
 
 %form{:enctype=>"multipart/form-data", :action=>"/admin/pages/", :method=>"post", "data-onsubmit_status"=>"Saving Changes&#8230;"}

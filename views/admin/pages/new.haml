@@ -1,6 +1,8 @@
 - body_classes << "reversed"
 - @selected = :pages
 
+= render 'toolbar'
+
 %h1 New Page
 
 %form{:enctype=>"multipart/form-data", :action=>"/admin/pages/", :method=>"post", "data-onsubmit_status"=>"Creating page&#8230;"}
